@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtPassLogin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtEmailLogin = new System.Windows.Forms.TextBox();
             this.btnIngresoLog = new System.Windows.Forms.Button();
-            this.txtPassLogin = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,8 +59,22 @@
             this.panel2.Size = new System.Drawing.Size(387, 243);
             this.panel2.TabIndex = 1;
             // 
+            // txtPassLogin
+            // 
+            this.txtPassLogin.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtPassLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassLogin.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtPassLogin.Location = new System.Drawing.Point(73, 147);
+            this.txtPassLogin.Name = "txtPassLogin";
+            this.txtPassLogin.PasswordChar = '*';
+            this.txtPassLogin.Size = new System.Drawing.Size(237, 22);
+            this.txtPassLogin.TabIndex = 3;
+            this.txtPassLogin.Text = "Ingrese Contraseña";
+            this.txtPassLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(83, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -78,7 +92,7 @@
             this.txtEmailLogin.Name = "txtEmailLogin";
             this.txtEmailLogin.Size = new System.Drawing.Size(237, 22);
             this.txtEmailLogin.TabIndex = 1;
-            this.txtEmailLogin.Text = "Ingrese Email";
+            this.txtEmailLogin.Text = "Ingrese Token";
             this.txtEmailLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnIngresoLog
@@ -93,23 +107,11 @@
             this.btnIngresoLog.Text = "Ingresar";
             this.btnIngresoLog.UseVisualStyleBackColor = false;
             // 
-            // txtPassLogin
-            // 
-            this.txtPassLogin.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtPassLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassLogin.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtPassLogin.Location = new System.Drawing.Point(73, 147);
-            this.txtPassLogin.Name = "txtPassLogin";
-            this.txtPassLogin.Size = new System.Drawing.Size(237, 22);
-            this.txtPassLogin.TabIndex = 3;
-            this.txtPassLogin.Text = "Ingrese Contraseña";
-            this.txtPassLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.Peru;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
