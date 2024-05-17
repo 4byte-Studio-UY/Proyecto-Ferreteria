@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34829.251
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{994F23B3-6573-4884-905C-9E5EEDFF9711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{9F3E0801-0DBB-4537-B9F3-C250D90B7C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design", "Design\Design.csproj", "{E684CE79-B60B-4078-A5FE-23F85C96855F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{994F23B3-6573-4884-905C-9E5EEDFF9711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994F23B3-6573-4884-905C-9E5EEDFF9711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994F23B3-6573-4884-905C-9E5EEDFF9711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994F23B3-6573-4884-905C-9E5EEDFF9711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3E0801-0DBB-4537-B9F3-C250D90B7C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3E0801-0DBB-4537-B9F3-C250D90B7C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3E0801-0DBB-4537-B9F3-C250D90B7C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3E0801-0DBB-4537-B9F3-C250D90B7C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E684CE79-B60B-4078-A5FE-23F85C96855F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E684CE79-B60B-4078-A5FE-23F85C96855F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E684CE79-B60B-4078-A5FE-23F85C96855F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E684CE79-B60B-4078-A5FE-23F85C96855F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18A53D33-1472-4152-AA8A-84832A6371C8}
+	EndGlobalSection
+EndGlobal
