@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnQuitarProduct = new System.Windows.Forms.Button();
             this.btnModificarProduct = new System.Windows.Forms.Button();
@@ -40,8 +40,9 @@
             this.btnAgregarProduct = new System.Windows.Forms.Button();
             this.btnAgregarVendedor = new System.Windows.Forms.Button();
             this.btnAgregarAdmin = new System.Windows.Forms.Button();
+            this.btnCerrarSession = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,19 +58,20 @@
             this.flowLayoutPanel2.Controls.Add(this.btnInformes);
             this.flowLayoutPanel2.Controls.Add(this.btnRegistroVentas);
             this.flowLayoutPanel2.Controls.Add(this.btnVerStock);
+            this.flowLayoutPanel2.Controls.Add(this.btnCerrarSession);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 496);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
-            // panel1
+            // panelPrincipal
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(218, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(645, 496);
-            this.panel1.TabIndex = 2;
+            this.panelPrincipal.BackColor = System.Drawing.Color.White;
+            this.panelPrincipal.Controls.Add(this.pictureBox1);
+            this.panelPrincipal.Location = new System.Drawing.Point(218, 12);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(645, 496);
+            this.panelPrincipal.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -168,6 +170,20 @@
             this.btnAgregarAdmin.TabIndex = 7;
             this.btnAgregarAdmin.Text = "Agregar Administrador";
             this.btnAgregarAdmin.UseVisualStyleBackColor = true;
+            this.btnAgregarAdmin.Click += new System.EventHandler(this.btnAgregarAdmin_Click);
+            // 
+            // btnCerrarSession
+            // 
+            this.btnCerrarSession.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCerrarSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSession.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSession.Location = new System.Drawing.Point(3, 403);
+            this.btnCerrarSession.Name = "btnCerrarSession";
+            this.btnCerrarSession.Size = new System.Drawing.Size(187, 44);
+            this.btnCerrarSession.TabIndex = 8;
+            this.btnCerrarSession.Text = "Cerrar Session";
+            this.btnCerrarSession.UseVisualStyleBackColor = false;
+            this.btnCerrarSession.Click += new System.EventHandler(this.btnVolverInicio_Click);
             // 
             // frmMenu
             // 
@@ -175,14 +191,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
             this.ClientSize = new System.Drawing.Size(875, 520);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Administrador";
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -190,7 +206,7 @@
 
         #endregion
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPrincipal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnQuitarProduct;
         private System.Windows.Forms.Button btnModificarProduct;
@@ -200,5 +216,6 @@
         private System.Windows.Forms.Button btnAgregarAdmin;
         private System.Windows.Forms.Button btnAgregarVendedor;
         private System.Windows.Forms.Button btnAgregarProduct;
+        private System.Windows.Forms.Button btnCerrarSession;
     }
 }

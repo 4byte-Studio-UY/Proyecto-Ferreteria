@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAgregarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarAdmin.Designer.cs">
+      <DependentUpon>frmAgregarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioLogo.Designer.cs">
+      <DependentUpon>frmInicioLogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarAdmin.resx">
+      <DependentUpon>frmAgregarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioLogo.resx">
+      <DependentUpon>frmInicioLogo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
