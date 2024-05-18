@@ -45,9 +45,12 @@ namespace Design
             cargarVentana(new frmAgregarAdmin());
         }
 
-        private void btnVolverInicio_Click(object sender, EventArgs e)
+        private void btnCerrarSession_Click(object sender, EventArgs e)
         {
-            cargarVentana(new frmInicioLogo());
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+
+            this.Close();
         }
     }
 }

@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAgregarAdmin = new System.Windows.Forms.Button();
+            this.btnAgregarVendedor = new System.Windows.Forms.Button();
+            this.btnAgregarProduct = new System.Windows.Forms.Button();
             this.btnQuitarProduct = new System.Windows.Forms.Button();
             this.btnModificarProduct = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnRegistroVentas = new System.Windows.Forms.Button();
             this.btnVerStock = new System.Windows.Forms.Button();
-            this.btnAgregarProduct = new System.Windows.Forms.Button();
-            this.btnAgregarVendedor = new System.Windows.Forms.Button();
-            this.btnAgregarAdmin = new System.Windows.Forms.Button();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSession = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.panelPrincipal.SuspendLayout();
@@ -64,24 +64,39 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 496);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
-            // panelPrincipal
+            // btnAgregarAdmin
             // 
-            this.panelPrincipal.BackColor = System.Drawing.Color.White;
-            this.panelPrincipal.Controls.Add(this.pictureBox1);
-            this.panelPrincipal.Location = new System.Drawing.Point(218, 12);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(645, 496);
-            this.panelPrincipal.TabIndex = 2;
+            this.btnAgregarAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarAdmin.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarAdmin.Location = new System.Drawing.Point(3, 3);
+            this.btnAgregarAdmin.Name = "btnAgregarAdmin";
+            this.btnAgregarAdmin.Size = new System.Drawing.Size(187, 44);
+            this.btnAgregarAdmin.TabIndex = 7;
+            this.btnAgregarAdmin.Text = "Agregar Administrador";
+            this.btnAgregarAdmin.UseVisualStyleBackColor = true;
+            this.btnAgregarAdmin.Click += new System.EventHandler(this.btnAgregarAdmin_Click);
             // 
-            // pictureBox1
+            // btnAgregarVendedor
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(109, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(443, 318);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnAgregarVendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarVendedor.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarVendedor.Location = new System.Drawing.Point(3, 53);
+            this.btnAgregarVendedor.Name = "btnAgregarVendedor";
+            this.btnAgregarVendedor.Size = new System.Drawing.Size(187, 44);
+            this.btnAgregarVendedor.TabIndex = 6;
+            this.btnAgregarVendedor.Text = "Agregar Vendedor";
+            this.btnAgregarVendedor.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarProduct
+            // 
+            this.btnAgregarProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarProduct.Location = new System.Drawing.Point(3, 103);
+            this.btnAgregarProduct.Name = "btnAgregarProduct";
+            this.btnAgregarProduct.Size = new System.Drawing.Size(187, 44);
+            this.btnAgregarProduct.TabIndex = 5;
+            this.btnAgregarProduct.Text = "Agregar Productos";
+            this.btnAgregarProduct.UseVisualStyleBackColor = true;
             // 
             // btnQuitarProduct
             // 
@@ -138,39 +153,24 @@
             this.btnVerStock.Text = "Stock Disponible";
             this.btnVerStock.UseVisualStyleBackColor = true;
             // 
-            // btnAgregarProduct
+            // panelPrincipal
             // 
-            this.btnAgregarProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarProduct.Location = new System.Drawing.Point(3, 103);
-            this.btnAgregarProduct.Name = "btnAgregarProduct";
-            this.btnAgregarProduct.Size = new System.Drawing.Size(187, 44);
-            this.btnAgregarProduct.TabIndex = 5;
-            this.btnAgregarProduct.Text = "Agregar Productos";
-            this.btnAgregarProduct.UseVisualStyleBackColor = true;
+            this.panelPrincipal.BackColor = System.Drawing.Color.White;
+            this.panelPrincipal.Controls.Add(this.pictureBox1);
+            this.panelPrincipal.Location = new System.Drawing.Point(218, 12);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(645, 496);
+            this.panelPrincipal.TabIndex = 2;
             // 
-            // btnAgregarVendedor
+            // pictureBox1
             // 
-            this.btnAgregarVendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarVendedor.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarVendedor.Location = new System.Drawing.Point(3, 53);
-            this.btnAgregarVendedor.Name = "btnAgregarVendedor";
-            this.btnAgregarVendedor.Size = new System.Drawing.Size(187, 44);
-            this.btnAgregarVendedor.TabIndex = 6;
-            this.btnAgregarVendedor.Text = "Agregar Vendedor";
-            this.btnAgregarVendedor.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarAdmin
-            // 
-            this.btnAgregarAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarAdmin.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregarAdmin.Location = new System.Drawing.Point(3, 3);
-            this.btnAgregarAdmin.Name = "btnAgregarAdmin";
-            this.btnAgregarAdmin.Size = new System.Drawing.Size(187, 44);
-            this.btnAgregarAdmin.TabIndex = 7;
-            this.btnAgregarAdmin.Text = "Agregar Administrador";
-            this.btnAgregarAdmin.UseVisualStyleBackColor = true;
-            this.btnAgregarAdmin.Click += new System.EventHandler(this.btnAgregarAdmin_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(109, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(443, 318);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnCerrarSession
             // 
@@ -183,7 +183,7 @@
             this.btnCerrarSession.TabIndex = 8;
             this.btnCerrarSession.Text = "Cerrar Session";
             this.btnCerrarSession.UseVisualStyleBackColor = false;
-            this.btnCerrarSession.Click += new System.EventHandler(this.btnVolverInicio_Click);
+            this.btnCerrarSession.Click += new System.EventHandler(this.btnCerrarSession_Click);
             // 
             // frmMenu
             // 
