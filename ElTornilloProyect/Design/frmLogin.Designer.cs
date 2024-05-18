@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtPassLogin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtEmailLogin = new System.Windows.Forms.TextBox();
@@ -42,43 +44,68 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Location = new System.Drawing.Point(216, 104);
+            this.panel1.Location = new System.Drawing.Point(216, 94);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(387, 243);
+            this.panel1.Size = new System.Drawing.Size(402, 253);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Menu;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtPassLogin);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.txtEmailLogin);
             this.panel2.Controls.Add(this.btnIngresoLog);
-            this.panel2.Location = new System.Drawing.Point(190, 129);
+            this.panel2.Location = new System.Drawing.Point(190, 117);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(387, 243);
+            this.panel2.Size = new System.Drawing.Size(403, 258);
             this.panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.Location = new System.Drawing.Point(158, 160);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Contraseña*";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Location = new System.Drawing.Point(172, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Token*";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtPassLogin
             // 
             this.txtPassLogin.BackColor = System.Drawing.SystemColors.ControlDark;
             this.txtPassLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassLogin.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtPassLogin.Location = new System.Drawing.Point(73, 147);
+            this.txtPassLogin.Location = new System.Drawing.Point(77, 176);
             this.txtPassLogin.Name = "txtPassLogin";
             this.txtPassLogin.PasswordChar = '*';
             this.txtPassLogin.Size = new System.Drawing.Size(237, 22);
             this.txtPassLogin.TabIndex = 3;
-            this.txtPassLogin.Text = "Ingrese Contraseña";
             this.txtPassLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(83, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(237, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -88,11 +115,10 @@
             this.txtEmailLogin.BackColor = System.Drawing.SystemColors.ControlDark;
             this.txtEmailLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailLogin.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtEmailLogin.Location = new System.Drawing.Point(73, 110);
+            this.txtEmailLogin.Location = new System.Drawing.Point(77, 135);
             this.txtEmailLogin.Name = "txtEmailLogin";
             this.txtEmailLogin.Size = new System.Drawing.Size(237, 22);
             this.txtEmailLogin.TabIndex = 1;
-            this.txtEmailLogin.Text = "Ingrese Token";
             this.txtEmailLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnIngresoLog
@@ -100,9 +126,9 @@
             this.btnIngresoLog.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnIngresoLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresoLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngresoLog.Location = new System.Drawing.Point(122, 183);
+            this.btnIngresoLog.Location = new System.Drawing.Point(121, 204);
             this.btnIngresoLog.Name = "btnIngresoLog";
-            this.btnIngresoLog.Size = new System.Drawing.Size(142, 35);
+            this.btnIngresoLog.Size = new System.Drawing.Size(147, 35);
             this.btnIngresoLog.TabIndex = 0;
             this.btnIngresoLog.Text = "Ingresar";
             this.btnIngresoLog.UseVisualStyleBackColor = false;
@@ -133,6 +159,8 @@
         private System.Windows.Forms.Button btnIngresoLog;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtPassLogin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
