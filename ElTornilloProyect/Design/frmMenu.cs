@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Design
 {
-    public partial class frmLogin : Form
+    public partial class frmMenu : Form
     {
-        public frmLogin()
+        public frmMenu()
         {
             InitializeComponent();
-        }
-
-        private void btnIngresoLog_Click(object sender, EventArgs e)
-        {
-            frmMenu frmMenu = new frmMenu();
-            frmMenu.Show();
         }
     }
 }

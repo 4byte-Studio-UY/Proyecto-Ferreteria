@@ -132,6 +132,7 @@
             this.btnIngresoLog.TabIndex = 0;
             this.btnIngresoLog.Text = "Ingresar";
             this.btnIngresoLog.UseVisualStyleBackColor = false;
+            this.btnIngresoLog.Click += new System.EventHandler(this.btnIngresoLog_Click);
             // 
             // frmLogin
             // 
@@ -141,9 +142,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "El Tornillo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
