@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassLogin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtEmailLogin = new System.Windows.Forms.TextBox();
+            this.txtTokenLogin = new System.Windows.Forms.TextBox();
             this.btnIngresoLog = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +56,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtPassLogin);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.txtEmailLogin);
+            this.panel2.Controls.Add(this.txtTokenLogin);
             this.panel2.Controls.Add(this.btnIngresoLog);
             this.panel2.Location = new System.Drawing.Point(190, 117);
             this.panel2.Name = "panel2";
@@ -110,16 +110,16 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // txtEmailLogin
+            // txtTokenLogin
             // 
-            this.txtEmailLogin.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtEmailLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailLogin.ForeColor = System.Drawing.SystemColors.Menu;
-            this.txtEmailLogin.Location = new System.Drawing.Point(77, 135);
-            this.txtEmailLogin.Name = "txtEmailLogin";
-            this.txtEmailLogin.Size = new System.Drawing.Size(237, 22);
-            this.txtEmailLogin.TabIndex = 1;
-            this.txtEmailLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTokenLogin.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtTokenLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTokenLogin.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtTokenLogin.Location = new System.Drawing.Point(77, 135);
+            this.txtTokenLogin.Name = "txtTokenLogin";
+            this.txtTokenLogin.Size = new System.Drawing.Size(237, 22);
+            this.txtTokenLogin.TabIndex = 1;
+            this.txtTokenLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnIngresoLog
             // 
@@ -157,7 +157,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtEmailLogin;
+        private System.Windows.Forms.TextBox txtTokenLogin;
         private System.Windows.Forms.Button btnIngresoLog;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtPassLogin;

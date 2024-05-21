@@ -29,10 +29,44 @@ namespace Design
 
         private void btnIngresoLog_Click(object sender, EventArgs e)
         {
-            frmMenu frmMenu = new frmMenu();
-            frmMenu.Show();
 
-            this.Hide();
+            frmMenu frmMenu = new frmMenu();
+
+            String token = txtTokenLogin.Text;
+            String pass = txtPassLogin.Text;
+
+            String combinacion = token + ":" + pass;
+
+            switch (combinacion) {
+
+                case "admin:123":
+
+                    MessageBox.Show("Ingreso correcxto", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    frmMenu.Show();
+
+                    this.Hide();
+
+                    break;
+
+                case "monitor:1234":
+
+                    MessageBox.Show("Ingreso correcxto", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    frmMenu.Show();
+
+                    this.Hide();
+
+                    break;
+
+                default:
+
+                    MessageBox.Show("Campos incorrectos o vacios, VERIFIQUE!","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    break;
+
+            }
+
         }
     }
 }
