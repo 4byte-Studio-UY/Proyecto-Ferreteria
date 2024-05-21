@@ -38,9 +38,9 @@
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnRegistroVentas = new System.Windows.Forms.Button();
             this.btnVerStock = new System.Windows.Forms.Button();
+            this.btnCerrarSession = new System.Windows.Forms.Button();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCerrarSession = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.panelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -153,6 +153,19 @@
             this.btnVerStock.Text = "Stock Disponible";
             this.btnVerStock.UseVisualStyleBackColor = true;
             // 
+            // btnCerrarSession
+            // 
+            this.btnCerrarSession.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCerrarSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSession.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSession.Location = new System.Drawing.Point(3, 403);
+            this.btnCerrarSession.Name = "btnCerrarSession";
+            this.btnCerrarSession.Size = new System.Drawing.Size(187, 44);
+            this.btnCerrarSession.TabIndex = 8;
+            this.btnCerrarSession.Text = "Cerrar Session";
+            this.btnCerrarSession.UseVisualStyleBackColor = false;
+            this.btnCerrarSession.Click += new System.EventHandler(this.btnCerrarSession_Click);
+            // 
             // panelPrincipal
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.White;
@@ -172,19 +185,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCerrarSession
-            // 
-            this.btnCerrarSession.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnCerrarSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSession.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrarSession.Location = new System.Drawing.Point(3, 403);
-            this.btnCerrarSession.Name = "btnCerrarSession";
-            this.btnCerrarSession.Size = new System.Drawing.Size(187, 44);
-            this.btnCerrarSession.TabIndex = 8;
-            this.btnCerrarSession.Text = "Cerrar Session";
-            this.btnCerrarSession.UseVisualStyleBackColor = false;
-            this.btnCerrarSession.Click += new System.EventHandler(this.btnCerrarSession_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,7 +193,9 @@
             this.ClientSize = new System.Drawing.Size(875, 520);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.flowLayoutPanel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Administrador";

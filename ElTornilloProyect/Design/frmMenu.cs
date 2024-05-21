@@ -15,6 +15,16 @@ namespace Design
         public frmMenu()
         {
             InitializeComponent();
+
+            // CUANDO EL FORMULARIO FMRLOGIN SE CIERRE SE GENERA EL EVENTO FORMCLOSED, EL METODO SE VA A EJECUTAR AUTOMATICAMENTE CADA VEZ QUE SE CIERRE EL PROGRAMA.
+            this.FormClosed += frmMenu_FormClosed;
+        }
+
+        //ESTE METODO LO QUE HACE ES UN CONTROLADOR DE EVENTO, CUANDO SE PRECIONA LA X PARA CERRAR EL PROGRAMA SE GENERA EL METODO FORMCLOSED QUE ES PARA CERRAR COMPLETAMENTE EL PROGRAMA
+        private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Cuando el formulario frmLogin se cierra, cierra la aplicación
+            Application.Exit();
         }
 
         //ESTE METODO SE ENCARGA DE PONER EL FORM DENTRO DE EL PANEL, TAMBIEN CENTRARLO Y DESACTIVARLE LOS CONTROLES, NO PODER AGREAGAR MAS DE UNA VENTANA
